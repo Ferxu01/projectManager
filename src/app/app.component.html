@@ -1,1 +1,22 @@
+<!-- HOME PAGE -->
+<div class="container">
+  <div class="page">
+    <mat-grid-list cols="4">
 
+      <mat-grid-tile [colspan]="4" [rowspan]="1" [style.background]="'yellow'"></mat-grid-tile>
+
+      <mat-grid-tile [colspan]="1" [rowspan]="2" [style.background]="'lightgreen'">
+
+        <mat-nav-list>
+          <a class="btn-sidebar" mat-button [routerLink]="['/']" *ngFor="let page of pages">
+            {{page.name}}
+          </a>
+        </mat-nav-list>
+      </mat-grid-tile>
+      <mat-grid-tile [colspan]="3" [rowspan]="2" [style.background]="'lightblue'">
+        <router-outlet class="pages"></router-outlet>
+      </mat-grid-tile>
+
+    </mat-grid-list>
+  </div>
+</div>
