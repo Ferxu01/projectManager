@@ -1,5 +1,9 @@
 .container {
-  background-color: red;
+  margin-top: 50px;
+
+  .header {
+    height: 70px;
+  }
 }
 
 mat-nav-list {
@@ -13,5 +17,11 @@ mat-nav-list {
 }
 
 .pages {
+  border: 2px solid red;
+}
+
+.page {
   /*border: 2px solid royalblue;*/
+  width: 90%;
+  margin: auto;
 }

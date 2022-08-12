@@ -4,11 +4,15 @@ import { CommonModule } from '@angular/common';
 import { ProjectRoutingModule } from './project-routing.module';
 import { AngularMaterialModule } from '../angular-material/angular-material.module';
 import { ProjectListComponent } from './project-list/project-list.component';
+import { ProjectCardComponent } from './project-card/project-card.component';
+import { AddProjectFormComponent } from './add-project-form/add-project-form.component';
 
 
 @NgModule({
   declarations: [
-    ProjectListComponent
+    ProjectListComponent,
+    ProjectCardComponent,
+    AddProjectFormComponent
   ],
   imports: [
     CommonModule,

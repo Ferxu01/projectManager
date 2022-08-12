@@ -1,9 +1,10 @@
 <!-- HOME PAGE -->
-<div class="container">
+<!--<div class="container">
+  <app-header></app-header>
   <div class="page">
-    <mat-grid-list cols="4">
+    <mat-grid-list cols="4" rowHeight="350px">
 
-      <mat-grid-tile [colspan]="4" [rowspan]="1" [style.background]="'yellow'"></mat-grid-tile>
+      <!--<mat-grid-tile [colspan]="4" [rowspan]="1" [style.background]="'yellow'"></mat-grid-tile>
 
       <mat-grid-tile [colspan]="1" [rowspan]="2" [style.background]="'lightgreen'">
 
@@ -11,12 +12,22 @@
           <a class="btn-sidebar" mat-button [routerLink]="['/']" *ngFor="let page of pages">
             {{page.name}}
           </a>
+          <button mat-raised-button color="accent" [routerLink]="['/projects/add']">Add project</button>
         </mat-nav-list>
       </mat-grid-tile>
-      <mat-grid-tile [colspan]="3" [rowspan]="2" [style.background]="'lightblue'">
-        <router-outlet class="pages"></router-outlet>
+      <mat-grid-tile class="pages" [colspan]="3" [rowspan]="2" [style.background]="'lightblue'">
+        <router-outlet></router-outlet>
       </mat-grid-tile>
 
     </mat-grid-list>
   </div>
+</div>-->
+
+
+<app-header></app-header>
+<app-sidebar></app-sidebar>
+<div class="content-wrapper">
+  <router-outlet></router-outlet>
 </div>
+
+
